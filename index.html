@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatalystFour</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="grid-bg"></div>
+    <div class="gradient-overlay"></div>
+    <div class="scanlines"></div>
+
+    <div class="shapes-container">
+        <div class="shape shape-circle"></div>
+        <div class="shape shape-triangle"></div>
+        <div class="shape shape-square"></div>
+    </div>
+
+    <div id="particles"></div>
+
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF5E00;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00B2FF;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <polygon points="20,2 38,14 38,26 20,38 2,26 2,14" fill="none" stroke="url(#logoGradient)" stroke-width="2"/>
+                    <polygon points="20,8 32,16 32,24 20,32 8,24 8,16" fill="url(#logoGradient)" opacity="0.3"/>
+                    <circle cx="20" cy="20" r="3" fill="url(#logoGradient)"/>
+                </svg>
+                <span class="logo-text">CatalystFour</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Chemists</a></li>
+                <li><a href="#about" class="nav-link">Why are they Important?</a></li>
+                <li><a href="#contact" class="nav-link">Group Member</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="text-rotator">
+                <div class="text-set active">
+                    <h1 class="glitch-text" data-text="FUTURE IS NOW">EXPLORE</h1>
+                    <p class="subtitle">Enter to the dimension of knowing filipino chemists</p>
+                </div>
+                <div class="text-set">
+                    <h1 class="glitch-text" data-text="BEYOND LIMITS">LEARN</h1>
+                    <p class="subtitle">Know their history and research!</p>
+                </div>
+                <div class="text-set">
+                    <h1 class="glitch-text" data-text="ELECTRIC DREAMS">History</h1>
+                    <p class="subtitle">They are Legends!</p>
+                </div>
+            </div>
+        </div>
+        <div class="cta-container">
+            <a href="#features" class="cta-button cta-primary">Get Started</a>
+            <a href="#about" class="cta-button cta-secondary">Why are they Important?</a>
+        </div>
+    </section>
+
+
+    <section class="features" id="features">
+        <h2 class="section-title">Select a Chemists</h2>
+        <div class="features-container">
+            <div class="feature-tabs">
+                <div class="tab-item active" data-tab="performance">
+                    <span class="tab-icon">🌱</span>
+                    <span>Gelia T. Castillo</span>
+                </div>
+                <div class="tab-item" data-tab="security">
+                    <span class="tab-icon">👨‍👩‍👧‍👦</span>
+                    <span>Alfredo V. Lagmay</span>
+                </div>
+                <div class="tab-item" data-tab="network">
+                    <span class="tab-icon">📻</span>
+                    <span>Gregorio Y. Zara</span>
+                </div>
+                <div class="tab-item" data-tab="analytics">
+                    <span class="tab-icon">🦋</span>
+                    <span>Clare R. Baltazar, Ph.D.</span>
+                </div>
+                <div class="tab-item" data-tab="integration">
+                    <span class="tab-icon">🔧</span>
+                    <span>Edgardo D. Gomez</span>
+                </div>
+                <div class="tab-item" data-tab="FeDelMundo">
+                    <span class="tab-icon">👩‍⚕️</span>
+                    <span>Dr. Fe del Mundo</span>
+                </div>
+                <div class="tab-item" data-tab="GavinoTrono">
+                    <span class="tab-icon">🐚</span>
+                    <span>Gavino Trono</span>
+                </div>
+                <div class="tab-item" data-tab="Gc">
+                    <span class="tab-icon">👁️</span>
+                    <span>Geminiano de Ocampo</span>
+                </div>
+                <div class="tab-item" data-tab="Gv">
+                    <span class="tab-icon">🥥</span>
+                    <span>Dr. Francisco O. Santos</span>
+                </div>
+                <div class="tab-item" data-tab="Ba">
+                    <span class="tab-icon">👨‍💻 </span>
+                    <span>Benjamin Almeda Sr.</span>
+                </div>
+            </div>
+            <div class="feature-content">
+                <div class="content-panel active" id="performance">
+                    <h3>Gelia T. Castillo</h3>
+                    <p>Gelia T. Castillo (1928–2017) was a pioneering Filipino sociologist known as the "Mother of Philippine Rural Sociology." She revolutionized agricultural development by proving that Filipino farmers are rational, market-oriented decision-makers, not resistant to change. Her work shifted policies toward participatory, farmer-centered approaches, profoundly influencing Philippine development.</p>
+                    <ul class="feature-list">
+                        <p>Contribution:</p>
+                        <li>Proved Filipino farmers are rational and market-oriented, debunking the myth they were resistant to change.</li>
+                        <li>Pioneered a "farmer-first" approach to agricultural development and policy.</li>
+                        <li>Shaped participatory development programs that respect local knowledge and decision-making.</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="security">
+                    <h3>Alfredo V. Lagmay (1919 – 2005)</h3>
+                    <p>Alfredo Lagmay was a distinguished Filipino psychologist, educator, and philosopher. He is widely recognized as a pioneer of scientific psychology in the Philippines and was a prolific researcher who championed the indigenization of psychological concepts and practices to fit the Filipino context.</p>
+                    <ul class="feature-list">
+                        <p>Contribution:</p>
+                        <li><b>Pioneer of Experimental Psychology:</b> He was a leading figure in establishing psychology as a rigorous, scientific discipline in the Philippines, moving it beyond a purely philosophical pursuit. He founded the University of the Philippines (UP) Animal Laboratory, which was crucial for experimental research.</li>
+                        <li><b>Champion of "Sikolohiyang Pilipino" (Filipino Psychology):</b> Lagmay was a central figure in the movement to develop a psychology based on Filipino culture, values, and language. He advocated for understanding Filipino behavior through indigenous concepts like "kapwa" (shared identity) and "pakikisama" (getting along).</li>
+                        <li><b>Academic Leadership:</b> He served as the long-time Chairman of the Department of Psychology at the University of the Philippines Diliman, where he mentored generations of Filipino psychologists and shaped the curriculum to be more relevant to local realities.</li>
+                        <li><b>Proponent of "Pandalubhasan" (General Education):</b> Beyond psychology, he was a strong advocate for a holistic, liberal arts education. He believed in forming well-rounded individuals, which greatly influenced the general education program at UP.</li>
+                        <li><b>Prolific Research and Writing:</b> He authored numerous seminal papers and books on learning, perception, hypnosis, and Filipino psychology, laying the foundational literature for the field in the country.</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="network">
+                    <h3>Gregorio Y. Zara</h3>
+                    <p>A Filipino engineer scientist known as the inventor of the videophone, the first two-way electronic video communicator, in 1955. Among his numerous inventions, the videophone stands out as a groundbreaking communication device. Zara’s innovative work created a plane engine powered by alcohol, gathering significant recognition in the scientific community.</p>
+                    <ul class="feature-list">
+                        <p>Contribution:</p>
+                        <li><b>Invented the First Two-Way Videophone (1955):</b> This was the early version of video calling apps like Zoom or FaceTime.</li>
+                        <li><b>Created an Airplane Engine that Used Alcohol as Fuel:</b> It was a more efficient and cleaner engine for its time.</li>
+                        <li><b>Designed a Solar Water Heater:</b> He used the sun's energy to heat water for home use.</li>
+                        <li><b>Invented the Solar Stove:</b> A stove that used sunlight instead of wood or gas for cooking.</li>                        
+                        <li><b>Developed a Propulsion Measuring Device for Airplanes:</b> A tool that helped scientists measure the thrust of airplane engines.</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="analytics">
+                    <h3>Clare R. Baltazar, Ph.D.</h3>
+                    <p>A female entomologists who published one of the most  relied-upon books on insects, serving as a vital reference tool for entomologists and  biologists. Through her research on Philippine Hymenoptera, Baltazar discovered eight previously undescribed genera and 108 species of parasitic wasps. Her work on Hymenoptera was important to future biological pest control in the Philippines. And was named a National Scientist of the Philippines in 2001.</p>
+                    <ul class="feature-list">
+                        <p>Contribution:</p>
+                        <li><b>World's Expert on Philippine Wasps:</b> She discovered and named hundreds of new species of wasps in the Philippines.</li>
+                        <li><b>Promoted Natural Pest Control:</b> She studied how these wasps could be used to eat farm pests instead of using chemical pesticides.</li>
+                        <li><b>Wrote the Important Book:</b> She authored "The Philippine Insects," the main guidebook for students and scientists studying insects in the country.</li>
+                        <li><b>A Pioneer for Women:</b> She was the first Filipino woman to earn a Ph.D. in Entomology (the study of insects), inspiring future generations.</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="integration">
+                    <h3>Edgardo D. Gomez (1938-2019)</h3>
+                    <p>A Filipino marine biologist and National Scientist of the Philippines, renowned for his pioneering work in marine conservation.</p>
+                    <ul class="feature-list">
+                        <p>Contribution:</p>
+                        <li><b>Pioneered Coral Reef Research:</b> Led the first comprehensive national assessment of coral reef damage, providing the scientific baseline for conservation.</li>
+                        <li><b>SGiant Clam Conservation:</b> Spearheaded the groundbreaking restoration and conservation program for endangered giant clams.</li>
+                        <li><b>Established Marine Science:</b> Founded the University of the Philippines Marine Science Institute (UP MSI).</li>
+                        <li><b>Advocated for Marine Protection:</b> Was a key driver in establishing marine protected areas (MPAs) across the Philippines.</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="FeDelMundo">
+                    <h3>Dr. Fe del Mundo (1911-011)</h3>
+                    <p>A famous Filipino doctor who dedicated her life to caring for children and babies. She is a National Scientist of the Philippines and a medical pioneer.</p>
+                    <ul class="feature-list">
+                        <p>Contribution:</p>
+                        <li><b>First Woman at Harvard Medical School:</b> She was the first ever woman to study pediatrics (children's medicine) at Harvard Medical School in the United States.</li>
+                        <li><b>Built the First Children's Hospital:</b> She founded the Children's Medical Center in the Philippines. It was the first hospital in the country just for kids.</li>
+                        <li><b>Invented the Bamboo Incubator:</b> She created a simple, low-cost incubator for premature babies made from bamboo, designed for use in rural villages without electricity.</li>
+                        <li><b>Fought Children's Diseases:</b> She was a leading expert on diseases like dengue, polio, and measles, and her research helped save countless children's lives.</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="GavinoTrono">
+                    <h3>Gavino Trono (1931 - Present)</h3>
+                    <p>A Filipino National Scientist and marine biologist. He is known as the "Father of Philippine Kappaphycus Farming" and is a world expert on seaweeds.</p>
+                    <ul class="feature-list">
+                        <p>Contribution:</p>
+                        <li><b>Pioneered Seaweed Farming:</b> He developed the scientific methods for the commercial farming of seaweeds, specifically Eucheuma and Kappaphycus.</li>
+                        <li><b>Conserved Coral Reefs:</b> His work provided an alternative income for fishermen, which helps reduce destructive fishing practices that damage coral reefs.</li>
+                        <li><b>Classified Philippine Marine Algae:</b> He studied and documented the diversity of seaweeds and marine plants in the Philippines, creating essential guides for scientists and conservationists.</li>
+                        <li><b>Trained Future Scientists:</b> As a professor, he trained generations of Filipino marine biologists, passing on his knowledge and passion for the ocean.</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="Gc">
+                    <h3>Dr. Geminiano de Ocampo (1907-1987)</h3>
+                    <p>Dr. Geminiano de Ocampo was a distinguished Filipino ophthalmologist recognized as a National Scientist of the Philippines. He is universally acclaimed as the "Father of Philippine Ophthalmology" for his transformative work in establishing the field of eye care in the country.</p>
+                    <ul class="feature-list">
+                        <p>Contribution:</p>
+                        <li><b>Pioneered the Study of Philippine Algae:</b> He was the first scientist to seriously study the diverse types of algae (seaweeds and freshwater algae) in the Philippines.</li>
+                        <li><b>Discovered Hundreds of New Species:</b> Through his lifelong research, he discovered, described, and classified over 300 new species of algae that were previously unknown to science.</li>
+                        <li><b>Authored Foundational Research:</b> His extensive studies and publications became the essential reference guides for all future Filipino and international scientists studying algae in the region.</li>
+                        <li><b>Trained Future Scientists:</b> As a professor at the University of the Philippines, he inspired and trained the next generation of Filipino biologists.</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="Gv">
+                    <h3>Dr. Francisco O. Santos</h3>
+                    <p>Dr. Francisco O. Santos was named a National Scientist of the Philippines for his pioneering work in the fields of nutrition and agricultural chemistry. He is celebrated for laying the scientific foundation for the study of nutrition in the country.</p>
+                    <ul class="feature-list">
+                        <p>Contribution:</p>
+                        <li><b>Pioneered Philippine Nutrition Science:</b> He dedicated his career to studying the chemical composition and nutritional value of indigenous Filipino foods and local ingredients. This provided the first scientific data on what constituted a healthy Filipino diet.</li>
+                        <li><b>Founded the Food and Nutrition Research Institute (FNRI):</b> SHe was the driving force behind the creation and development of this institute. Under his leadership, the FNRI became the central government body for research on food, nutrition, and related public health programs, a role it continues to play today.</li>
+                        <li><b>Researched Social Class and Diet:</b> His work was groundbreaking for its time, as he investigated the relationship between socioeconomic status and dietary patterns. He studied how the diets and nutritional health of Filipinos were affected by their income and social class.</li>
+                        <li><b>Academic Excellence and Training:</b> After earning his Ph.D. in Biochemistry from Yale University, he returned to the Philippines to apply his knowledge. He trained and influenced a generation of Filipino scientists in the importance of nutrition and agricultural chemistry.</li>
+                    </ul>
+                </div>
+                <div class="content-panel" id="Ba">
+                    <h3>Benjamin Almeda Sr. (1923–2016)</h3>
+                    <p>Benjamin Almeda Sr. (1923–2016) was a Filipino inventor and businessman, often referred to as the "Father of Filipino Inventors." He founded Mabini Labs and dedicated his life to creating affordable, locally-made machines that empowered small businesses and farmers.</p>
+                    <ul class="feature-list">
+                        <p>Contribution:</p>
+                        <li><b>Invented Affordable Food Processing Machines:</b>He designed and manufactured over 30 types of simple, robust, and low-cost machines. These included: Rice grinder, Meat grinder, Ice drop maker, Coconut grater, Corn shellerFood processor</li>
+                        <li><b>Empowered Local Communities:</b> His inventions were specifically made for small-scale entrepreneurs, market vendors, and rural farmers. By making these tools affordable and easy to maintain, he enabled countless Filipinos to start their own businesses and improve their livelihoods.</li>
+                        <li><b>Founded Mabini Labs:</b> He established a company that not only manufactured these machines but also became a hub for innovation, supporting and inspiring other Filipino inventors.</li>
+                        <li><b>Promoted Self-Reliance:</b> During a time when many machines were imported and expensive, Almeda proved that the Philippines could produce its own high-quality, practical technology, fostering a spirit of self-reliance and ingenuity.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h2 class="section-title">Why are Filipino Chemists Important?</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Guardians of Health and Stewards of the Environment</h2>
+                <p>Filipino chemists are indispensable guardians of public health and environmental integrity. Their work is critically tailored to address the unique challenges faced by the Philippines, a tropical archipelago vulnerable to specific diseases and environmental degradation. In the realm of health, they are the first line of defense, developing affordable vaccines and medicines for tropical illnesses like dengue and researching the nutritional composition of local foods to combat deficiencies. This leads to life-saving interventions, such as fortifying staple foods like rice and noodles with essential vitamins and minerals to improve the well-being of millions. Beyond medicine, their role as environmental stewards is equally vital. They monitor and tackle pollution in critical ecosystems like Manila Bay and Laguna Lake, develop sustainable methods for waste management and water purification, and provide crucial data for disaster preparedness—such as analyzing volcanic ash—to protect communities. Through this dual focus, chemists ensure a healthier population and a safer, cleaner environment, directly enhancing the nation's quality of life.</p>
+            </div>
+            <div class="about-visual">
+                <div class="about-graphic"></div>
+            </div>
+        </div>
+        
+
+        <div class="about-content" style="margin-top: 80px;">
+            <div class="about-visual">
+                <div class="about-graphic-alt">
+                    <div class="hexagon"></div>
+                    <div class="hexagon"></div>
+                    <div class="hexagon"></div>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>Engines of Economic Growth and Innovation</h2>
+                <p>Beyond safeguarding health and nature, Filipino chemists are fundamental engines of economic growth and innovation. They transform the country's vast natural resources into valuable commercial products, creating industries and driving progress. In the agricultural sector, which forms a backbone of the economy, chemists develop advanced fertilizers and safer pesticides that increase the yield and export quality of key crops like coconuts, mangoes, and bananas. Most significantly, in the field of natural products chemistry, they add immense value to the nation's rich biodiversity by extracting and studying compounds from native plants. This research leads to the development of high-value goods for global markets, including premium cosmetics, pharmaceuticals, and food flavorings, turning local flora into a source of national revenue and pride. By building these bridges between raw materials and finished products, chemists not only generate wealth and create jobs but also secure the Philippines' competitive edge in the global economy, proving that scientific ingenuity is a powerful catalyst for prosperity.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">CatalystFour researcher</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label style="font-size: x-large;" for="name">Lloyd Sylvester Dela Cruz</label>
+                    </div>
+                    <div class="form-group">
+                        <label style="font-size: x-large;" for="email">Marizette Leila Sabido</label>
+                    </div>
+                    <div class="form-group">
+                        <label style="font-size: x-large;" for="subject">Greishen Mae Campullo</label>
+                    </div>
+                    <div class="form-group">
+                        <label style="font-size: x-large;" for="message">Josh Elijah Herrera</label>
+                    </div>
+                    <div class="form-group">
+                        <label style="font-size: x-large;" for="message">Albus Timothy Cruz</label>
+                    </div>
+                  <div class="form-group">
+                        <label style="font-size: x-large;" for="message">Windzen Rhain Fajardo</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+            <div class="contact-info">
+                <h3>Resources</h3>
+                <div class="info-item">
+                    <div class="info-details">
+                        <h4>🌱 Gelia T. Castillo</h4>
+                        <p><a href="https://www.centralalive.org/top-10-filipino-scientists-and-their-contribution-shaping-science-and-society/?fbclid=IwY2xjawMUkoZleHRuA2FlbQIxMQABHqipowaH_OQCntN56MabpzEMtaI2tQcLLvLHs-djRffOf1Y69YuGKtirbMXi_aem_8F-gSmU8zmVPqjkQfKV4eQ" target="_blank" rel="nofollow noopener">resources</a></p></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-details">
+                        <h4>👨‍👩‍👧‍👦Alfredo V. Lagmay</h4>
+                        <p><a href="https://www.centralalive.org/top-10-filipino-scientists-and-their-contribution-shaping-science-and-society/?fbclid=IwY2xjawMUkoZleHRuA2FlbQIxMQABHqipowaH_OQCntN56MabpzEMtaI2tQcLLvLHs-djRffOf1Y69YuGKtirbMXi_aem_8F-gSmU8zmVPqjkQfKV4eQ" target="_blank" rel="nofollow noopener">resources</a></p></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-details">
+                        <h4>📻 Gregorio Y. Zara</h4>
+                        <p><a href="https://www.thoughtco.com/gregorio-zara-filipino-scientist-1991703" target="_blank" rel="nofollow noopener">resources</a></p></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-details">
+                        <h4>🦋Clare R. Baltazar, Ph.D.</h4>
+                        <p><a href="https://www.centralalive.org/top-10-filipino-scientists-and-their-contribution-shaping-science" target="_blank" rel="nofollow noopener">resources</a></p></p>
+                    </div>
+                </div>
+               <div class="info-item">
+                    <div class="info-details">
+                        <h4>🔧Edgardo D. Gomez</h4>
+                        <p><a href="https://www.centralalive.org/top-10-filipino-scientists-and-their-contribution-shaping-science-and-society/?fbclid=IwY2xjawMUkoZleHRuA2FlbQIxMQABHqipowaH_OQCntN56MabpzEMtaI2tQcLLvLHs-djRffOf1Y69YuGKtirbMXi_aem_8F-gSmU8zmVPqjkQfKV4eQ" target="_blank" rel="nofollow noopener">resources</a></p></p>
+                    </div>
+                </div>
+               <div class="info-item">
+                    <div class="info-details">
+                        <h4>👩‍⚕️ Dr. Fe Del Mundo</h4>
+                        <p><a href="https://www.centralalive.org/top-10-filipino-scientists-and-their-contribution-shaping-science-and-society/?fbclid=IwY2xjawMUkoZleHRuA2FlbQIxMQABHqipowaH_OQCntN56MabpzEMtaI2tQcLLvLHs-djRffOf1Y69YuGKtirbMXi_aem_8F-gSmU8zmVPqjkQfKV4eQ" target="_blank" rel="nofollow noopener">resources</a></p></p>
+                    </div>
+                </div>
+                                <div class="info-item">
+                    <div class="info-details">
+                        <h4>🐚 Gavino Trono</h4>
+                        <p><a href="https://www.centralalive.org/top-10-filipino-scientists-and-their-contribution-shaping-science-and-society/?fbclid=IwY2xjawMUkoZleHRuA2FlbQIxMQABHqipowaH_OQCntN56MabpzEMtaI2tQcLLvLHs-djRffOf1Y69YuGKtirbMXi_aem_8F-gSmU8zmVPqjkQfKV4eQ" target="_blank" rel="nofollow noopener">resources</a></p></p>
+                    </div>
+                </div>
+                                <div class="info-item">
+                    <div class="info-details">
+                        <h4>👁️ Geminiano de Ocampo</h4>
+                        <p><a href="https://www.flipscience.ph/features/national-scientist-francisco-santos/?fbclid=IwY2xjawMdQxJleHRuA2FlbQIxMQABHrckfplZwswAbvU_tOCO28pN-G8xu9jKu4k9j7vYr6pL2Fu8H5U4YYpYEuSY_aem_01nNq7A3RDggQkaxhug_cQ" target="_blank" rel="nofollow noopener">resources</a></p></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-details">
+                        <h4>🥥Dr. Francisco 0. Santos</h4>
+                        <p><a href="https://www.centralalive.org/top-10-filipino-scientists-and-their-contribution-shaping-science-and-society/?fbclid=IwY2xjawMUkoZleHRuA2FlbQIxMQABHqipowaH_OQCntN56MabpzEMtaI2tQcLLvLHs-djRffOf1Y69YuGKtirbMXi_aem_8F-gSmU8zmVPqjkQfKV4eQ" target="_blank" rel="nofollow noopener">resources</a></p></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-details">
+                        <h4>👨‍💻 Benjamin Almeda Sr.</h4>
+                        <p><a href="https://www.ipophil.gov.ph/news/in-appreciation-of-innovation-benjamin-almeda-sr-father-of-filipino-inventors/?fbclid=IwY2xjawMdQrJleHRuA2FlbQIxMQABHm6K5a65gsH97I5ueAL4ADIKVqfJOZBKiJTG9p0fBi7zmcM2LTBO-uuypJLU_aem_16BiLyB6TNUQZqHFUmpxYQ#:~:text=Almeda%20is%20known%20in%20the,widely%20and%20commonly%20used%20today" target="_blank" rel="nofollow noopener">resources</a></p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+            </div>
+            <p class="copyright">© 2025 CatalystFour. All rights reserved. Cool Chemists</p>
+        </div>
+    </footer>
+<script src="templatemo-electric-scripts.js"></script>
+</body>
+</html>
